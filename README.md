@@ -5,6 +5,8 @@ Additionally, the database aims to automate various processes including creating
 
 Through this project, I aim to demonstrate my ability to handle end-to-end database development, including requirements gathering, table creation, data relationships, automation, and user privilege management. 
 
+![alt text](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/cdcb1cdee244cbc371a36cac21215cb7163b37c0/Images/DkpQbTTU8AA7T1L.jpg)
+
 ## Key Features
 - **Daily Leagues and Field Rentals**: The company operates across five facilities, each divided into three smaller fields. Fields can be booked individually or as a whole.
 - **Field Rentals**: Select facilities allow rentals for a minimum duration of one hour, with pricing depending on the season (indoor or outdoor).
@@ -43,7 +45,9 @@ The tables to be used in the database were divided into the following:
 - Field Rentals - Records rental bookings for fields, including user details, booking dates, times, and facilitators.
 - Cancellation - This table holds records of bookings that were cancelled with information on the refund status of each cancellation along with the booking ID.
 
-The script below contains the SQL scripts used to build the users and leagues table only
+The script below contains the SQL scripts used to build the leagues table only
+
+![alt text](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/cdcb1cdee244cbc371a36cac21215cb7163b37c0/Images/leagues%20table.png)
 
 
 ## Data Hashing and Encryption
@@ -85,8 +89,8 @@ User management is important because it plays a vital role in ensuring the secur
 For this database, I would be creating 3 users, the details are below
 
 - **Admin**: The user should be able to perform all actions on the database from creating, querying, changing and deleting instructors, members, bookings, facilities etc.
--**Facilitator**: The facilitator should be able to check and query the facilitator and facilities tables and should be able to update their personal details on the facilitator table. They should also be able to view booking details and bookings for the week
--**Users**: Users should be able to check and update their details on the membership table. Members should be able to view available bookings should be able to make bookings.
+- **Facilitator**: The facilitator should be able to check and query the facilitator and facilities tables and should be able to update their personal details on the facilitator table. They should also be able to view booking details and bookings for the week
+- **Users**: Users should be able to check and update their details on the membership table. Members should be able to view available bookings should be able to make bookings.
 	
 The script used to carry out this process is documented in my repository.
 
