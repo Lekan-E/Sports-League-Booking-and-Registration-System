@@ -73,6 +73,15 @@ Specifically, I created views that show all the booking details of each upcoming
 
 You can find the script [HERE](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/b614edfcd53bcce5170569abc0a36e1175017420/Views%2C%20Procedures%20and%20Triggers.sql)
 
+## Triggers
+Here is a sampe procedure on using triggers to update the status of a league based on the number of teams that are signed up. This process increments the number of teams and when that number of registered teams is equal to the number of required team, then the league status is set to 'SOLD OUT'.
+
+Some other triggers includes handling cancellations then inserting the bookingID into the cancellations table.
+
+![alt text](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/039ea5839669d847888f7c98e2730eb3f57ea39e/Images/cancellation%20triggers.png)
+
+This script shows the league signup process [HERE](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/b614edfcd53bcce5170569abc0a36e1175017420/League%20Signup%20Process.sql)
+
 ## Automating Database Activity
 The goal of automating database activity is to streamline, optimize, and schedule routine or repetitive tasks, improving efficiency, accuracy, and overall management of the database environment.
 
