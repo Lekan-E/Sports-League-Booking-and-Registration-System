@@ -1,4 +1,4 @@
-# Database Design: Sports-League-Booking-and-Registration-System
+# Database Design: Sports League Booking and Registration System
 ## Project Background
 The OttawaFooty7s is Ottawa’s largest recreational sports league that offers daily leagues and field rentals across multiple facilities in the Ottawa-Gatineau region. During my time as a league referee, I identified the need to build a database system for the company to automate league operations. Collaborating with the senior manager and league facilitators, I undertook the design of a comprehensive database to store important data such as user signup data as well as staff information.
 Additionally, the database aims to automate various processes including creating new leagues, handling team signups, managing field rentals and payments, updating user records, processing cancellations, and providing a seamless experience for both new and registered users and teams.
@@ -30,6 +30,9 @@ Before setting up a database, I ensured the following:
 - Identified primary keys for each table and established relationships between them.
 - Looked at each table and decided how the data in one table is related to the data in other tables. Added fields to tables or create new tables to clarify the relationships, as necessary.
 
+Check the code [here](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/b614edfcd53bcce5170569abc0a36e1175017420/Database%20and%20Table%20Creation.sql)
+
+![alt text](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/1551edb6ed5c3b9a67f98c7aeeab794b7f110efc/Images/create%20db.png)
 
 ## Table Creation and Inserting Data
 After coming up with a blueprint for the database, the next step was to create the tables, add table constraints and establish a relationship between the tables.
@@ -55,14 +58,20 @@ Hashing is a one-way cryptographic function that transforms the original passwor
 
 The password column on the membership table was hashed in order to protect the information of every member on the table.
 
-Check my GitHub Repository to see how it done.
+
+## Creating View & ER Diagram
+The next step I took was to create an Entity Relationship Diagram for the purpose of visually representing the structure of a database, including its entities (tables), relationships between entities, and the attributes associated with each entity.
+
+The ER diagram for the booking system is seen below
+
+![alt text](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/cdcb1cdee244cbc371a36cac21215cb7163b37c0/Images/leagues%20table.png)
 
 ## Creating Views
 Now that I have created the tables and inserted some data, the next step is to create views.
 
 Specifically, I created views that show all the booking details of each upcoming field rental and all leagues taking place in the current week. This would give the management and admin an easy view to all the booking details in the current week so that proper preparations can be made and assign free spots for field rentals.
 
-You can find the script in my GitHub Repository.
+You can find the script [HERE](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/b614edfcd53bcce5170569abc0a36e1175017420/Views%2C%20Procedures%20and%20Triggers.sql)
 
 ## Automating Database Activity
 The goal of automating database activity is to streamline, optimize, and schedule routine or repetitive tasks, improving efficiency, accuracy, and overall management of the database environment.
@@ -80,8 +89,7 @@ Here is the list of activities I automated:
 - Handling team registration to accept deposit and full payments, updating registration status once full payment has been confirmed and cancelling registration if payment isn’t confirmed 14 days before the start of the league.
 - Cancelling a field rental based on the condition that it’s within two days before the start time of the booking. 
 
-These are most of the automations I implemented on the database and the scripts used to create the automation can be found in my GitHub Repository.
-
+These are most of the automations I implemented on the database and the scripts used to create the automation can be found [HERE](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/b614edfcd53bcce5170569abc0a36e1175017420/Views%2C%20Procedures%20and%20Triggers.sql)
 
 ## User Management & Privileges
 User management is important because it plays a vital role in ensuring the security, integrity, and efficiency of a database system. They enforce access control, limiting database interactions to authorized individuals and preventing unauthorized access.
@@ -92,7 +100,7 @@ For this database, I would be creating 3 users, the details are below
 - **Facilitator**: The facilitator should be able to check and query the facilitator and facilities tables and should be able to update their personal details on the facilitator table. They should also be able to view booking details and bookings for the week
 - **Users**: Users should be able to check and update their details on the membership table. Members should be able to view available bookings should be able to make bookings.
 	
-The script used to carry out this process is documented in my repository.
+The script used to carry out this process is documented [HERE](https://github.com/Lekan-E/Sports-League-Booking-and-Registration-System/blob/b614edfcd53bcce5170569abc0a36e1175017420/User%20Management%20and%20dB%20Backup.sql)
 
 ## Backup and Recovery
 We use Backups to make sure our database is protected and recoverable in the event of loss. There are different types of backup but the backup I performed is a Logical backup.
